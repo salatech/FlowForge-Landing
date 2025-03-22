@@ -57,7 +57,7 @@ const Home = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [""]);
 
   const startCounters = () => {
     // Animate counters
@@ -451,19 +451,19 @@ const Home = () => {
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Don't just take our word for it. Here's what our clients have to say about our partnership.
+                Don&apos;t just take our word for it. Here&apos;s what our clients have to say about our partnership.
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  quote: "  FlowForge transformed our approach to growth. Their strategies helped us double our customer base in just three months.",
+                  quote: "FlowForge transformed our approach to growth. Their strategies helped us double our customer base in just three months.",
                   author: "Sarah Johnson",
                   company: "TechStart CEO"
                 },
                 {
-                  quote: "Working with   FlowForge was the best decision we made. Their 4-week turnaround time exceeded our expectations.",
+                  quote: "Working with  FlowForge was the best decision we made. Their 4-week turnaround time exceeded our expectations.",
                   author: "Michael Chen",
                   company: "Innovate Labs Founder"
                 }
@@ -484,7 +484,7 @@ const Home = () => {
                         <Star key={i} className="h-4 w-4 text-yellow-400 fill-yellow-400 animate-pulse" style={{ animationDelay: `${i * 150}ms`, animationDuration: '2s' }} />
                       ))}
                     </div>
-                    <p className="text-gray-700 mb-4 italic">"{testimonial.quote}"</p>
+                    <p className="text-gray-700 mb-4 italic">&quot;{testimonial.quote}&quot;</p>
                     <div>
                       <div className="font-bold">{testimonial.author}</div>
                       <div className="text-sm text-gray-500">{testimonial.company}</div>
